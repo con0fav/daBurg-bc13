@@ -23,18 +23,52 @@
 </ul>
 
 <h2>Add a burg</h2>
-<form class="create-form">
 
-  <div class="form-group">
-    <label for="ca">Burg Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
+  <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Burger adder
+        </div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      
+      <div class="window-body">
+        
+        <form class="create-form">
 
-  <div class="form-group">
-    <label for="eaten">eaten?</label><br>
-    <input type="radio" name="eaten" value="1" checked> Eaten!<br>
-    <input type="radio" name="eaten" value="0"> Uneaten
-  </div>
+          <div class="form-group">
+            <label for="bu">Burg Name:</label>
+            <input type="text" id="bu" name="name">
+          </div>
 
-  <button type="submit">Add burg</button>
-</form>
+
+          {{!-- <div class="form-group">
+            <label for="eaten">Eaten?</label><br>
+            <input type="radio" name="eaten" value="1" checked> Eaten!<br>
+            <input type="radio" name="eaten" value="0"> Uneaten
+          </div> --}}
+
+          <fieldset>
+            <legend>Ate this burger before?</legend>
+            <div class="field-row">
+              <input id="radio1" type="radio" name="eaten" value="1">
+              <label for="radio1">Eaten</label>
+            </div>
+            <div class="field-row">
+              <input id="radio2" type="radio" name="eaten" value="0">
+              <label for="radio2">Uneaten</label>
+            </div>
+          </fieldset>
+
+        </form>
+        
+        <section class="field-row" style="justify-content: flex-end">
+          <button type="submit">Add burg</button>  
+        </section>
+      </div>
+    </div>
+  

@@ -22,12 +22,6 @@ hr {
   background: linear-gradient( to right, red 20%, yellow 20%, yellow 36%, green 36%, green 60%, blue 60%, blue 100% );
 }
 
-/* li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-} */
-
 .label {
   font-weight: bold;
 }

@@ -1,15 +1,5 @@
-{{!-- <li>
-	{{name}}
-
-	<button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
-		{{#if eaten}}Eat Burg{{else}}put back on menu{{/if}}
-	</button>
-
-	<button class="delete-burg" data-id="{{this.id}}">Purge</button>
-</li> --}}
-
 <li>
-	<div class="window" style="margin: 32px; width: 250px">
+	<div class="window" style="margin: 32px; width: 500px">
 		<div class="title-bar">
 			<div class="title-bar-text">
 			{{name}}
@@ -22,11 +12,11 @@
 			</div>
 		</div>
 		<div class="window-body">
-			<p>Hello, world!</p>
+			<p>Could this be your burger of choice? What a wonderful menu.</p>
 			<section class="field-row" style="justify-content: flex-end">
 			
 			<button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
-			{{#if eaten}}Eat Burg{{else}}put back on menu{{/if}}
+			{{#if eaten}}Eat Burg{{else}}Put back on menu{{/if}}
 			</button>
 
 			<button class="delete-burg" data-id="{{this.id}}">Purge</button>
