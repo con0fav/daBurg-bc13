@@ -1,4 +1,4 @@
-<li>
+{{!-- <li>
 	{{name}}
 
 	<button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
@@ -6,4 +6,31 @@
 	</button>
 
 	<button class="delete-burg" data-id="{{this.id}}">Purge</button>
+</li> --}}
+
+<li>
+	<div class="window" style="margin: 32px; width: 250px">
+		<div class="title-bar">
+			<div class="title-bar-text">
+			{{name}}
+			</div>
+
+			<div class="title-bar-controls">
+			<button aria-label="Minimize"></button>
+			<button aria-label="Maximize"></button>
+			<button aria-label="Close"></button>
+			</div>
+		</div>
+		<div class="window-body">
+			<p>Hello, world!</p>
+			<section class="field-row" style="justify-content: flex-end">
+			
+			<button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
+			{{#if eaten}}Eat Burg{{else}}put back on menu{{/if}}
+			</button>
+
+			<button class="delete-burg" data-id="{{this.id}}">Purge</button>
+			</section>
+		</div>
+	</div>
 </li>
