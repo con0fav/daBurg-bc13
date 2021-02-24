@@ -26,7 +26,7 @@ $(function() {
     event.preventDefault();
 
     var newBurg = {
-      name: $("#ca").val().trim(),
+      name: $("#bu").val().trim(),
       eaten: $("[name=eaten]:checked").val().trim()
     };
 
